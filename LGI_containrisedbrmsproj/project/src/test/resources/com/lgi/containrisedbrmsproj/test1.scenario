@@ -1,0 +1,55 @@
+<scenario>
+  <name>test1.scenario</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures>
+    <fact-data>
+      <type>TestAddition</type>
+      <fieldData>
+        <field-data>
+          <name>var1</name>
+          <value>10000</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>test</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name> CheckIntRF</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <execution-trace>
+      <executionTimeResult>1</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>value</fieldName>
+          <expected>1</expected>
+          <actualResult>0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[test] field [value] was [0] expected [1].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>test</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+  </fixtures>
+  <lastRunResult>2023-01-10 14:11:25.238 UTC</lastRunResult>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>com.lgi.containrisedbrmsproj</packageName>
+  <imports>
+    <imports>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>in.libertygeneral.brmspoc.TestAddition</type>
+      </org.kie.soup.project.datamodel.imports.Import>
+    </imports>
+  </imports>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
+</scenario>

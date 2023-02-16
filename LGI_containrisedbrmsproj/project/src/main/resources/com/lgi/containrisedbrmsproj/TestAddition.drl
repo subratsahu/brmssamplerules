@@ -1,0 +1,10 @@
+package com.lgi.containrisedbrmsproj;
+
+import in.libertygeneral.brmspoc.TestAddition;
+
+rule "TestAddition"
+when
+    test : TestAddition();
+then
+    test.setValue(test.getVar1()+test.getVar2());
+end
